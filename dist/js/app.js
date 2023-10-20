@@ -1,0 +1,21 @@
+import { Company } from "./class/Company.js";
+import { Frontend, Backend } from "./class/Roles.js";
+let fEmployee1 = new Frontend('John', 'SpaceX');
+let fEmployee2 = new Frontend('Jack', 'SpaceX');
+let fEmployee3 = new Frontend('Derek', 'NASA');
+let company1 = new Company();
+company1.addEmployee(fEmployee1);
+company1.addEmployee(fEmployee2);
+company1.addEmployee(fEmployee3);
+console.log(company1.getNameList());
+console.log(company1.getProjectList());
+let bEmployee1 = new Backend('Bob', 'API Development');
+let bEmployee2 = new Backend('Ola', 'SpaceX');
+let bEmployee3 = new Backend('Derek');
+let company2 = new Company();
+company2.addEmployee(bEmployee1);
+company2.addEmployee(bEmployee2);
+company2.addEmployee(bEmployee3);
+console.log(company2.getNameList());
+console.log(company2.getProjectList());
+//# sourceMappingURL=app.js.map
